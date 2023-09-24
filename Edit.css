@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+   font-family: sans-serif;
+}
+body{
+    background: #333;
+}
+.container{
+    /* 
+        margin: auto;
+    نفس استخدام 
+        display: flex;
+    justify-content: center;
+
+    */
+    margin: auto;
+    width: 80vw;
+    /* height: 80vw; */
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+    /* تخطيط العناصر  */
+    display: grid;
+    grid-template-columns: 5fr /* 5frخاص بالصوره  */ 3fr /* 3fr  خاص بالفلتر */;
+}
+
+.img{
+    /* لجعل الصوره فوق والزرار تحت */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.img img{
+ /* اقصي عرض وارتفاع */
+max-width: 45vw;
+max-height: 60vw;
+}
+
+.upload input{
+    display: none;
+}
+.upload label{
+    color: #fff;
+    padding: 8px 20px;
+    border: 2px #fff dashed;
+}
+                /* =!!!!!!!!!!=!!!!!!!!!!!!!=!!!!!!!!! */
+    .filters ul{
+        display: flex;
+        flex-direction: column;
+        gap: 30px; 
+    }
+
+    .filters ul li{
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+        direction: rtl;
+    }
+    .filters ul li label{
+        color: #fff;
+    }
+    .filters ul li:last-child{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .filters ul li a,span{
+        color: #fff;
+        padding: 10px 20px ;
+        background-color: #060;
+    }
+    @media screen and (max-width:650px) {
+        .container{
+            grid-template-columns:1fr ;
+            gap: 50px;
+        }
+    }

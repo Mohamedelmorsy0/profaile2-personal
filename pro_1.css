@@ -1,0 +1,52 @@
+body{
+/* تستخدم للتعبير عن ان البادي واخد 100% من الشاشه */
+   height: 100vh;
+    /* لون الخلفيه متدرج */
+    background-image: linear-gradient(to right, red  , green , yellow);
+ /*   الفورم في النتصف من فوق  */
+    display: flex;
+    justify-content: center;
+ /*  الفورم في منتصف المتصفح من جميع الاتجاهات */
+    align-items: center;
+}
+form{
+    background-image: linear-gradient(to right, whitesmoke  , rgb(95, 160, 95) , rgba(192, 192, 102, 0.719));
+    padding: 10px;
+    width: 300px;
+    /* ودا عشان ميخرجش بره الصندوق المحدد */
+    display: flex;
+    flex-wrap: wrap;
+    /* مسافات بين الاينبوت */
+    gap: 7px;
+}
+form input{
+    font-family: serif;
+    font-weight: bold;
+   font-size: x-large;
+    width: 250px ;
+    padding: 10px;
+    margin: 10px;
+    background-color: #988d3ec5;
+    color: rgb(1, 1, 1);
+}
+#sub{
+    /* لما الماوس تيجي علي الزرار تتحول لايد */
+    cursor: pointer;
+    width: 100% ;
+    background-color: rgb(61, 122, 61);
+    
+}
+#sub:hover{
+    background-color: rgba(215, 43, 43, 0.616);
+    font-weight: bold;
+    color: rgb(240, 231, 231);
+    font-family: serif;
+}
+legend{
+    font-size: 50px;
+    color: rgb(210, 198, 198);
+}
+form input:hover{
+    background-color: rgb(34, 117, 181);
+    color: aliceblue;
+}
